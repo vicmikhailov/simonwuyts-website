@@ -33,6 +33,9 @@
 
 <script>
 export default {
+  fetch({store}) {
+    store.commit('SET_LOGO_COLOR', 'green');
+  },
   head() {
     return { title: this.$t('services.title') }
   }

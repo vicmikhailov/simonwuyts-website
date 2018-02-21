@@ -1,25 +1,26 @@
 <template>
   <div>
     <header>
+      <logo :color="logoColor"/>
       <div>
         <nav >
-          <nuxt-link :to="$i18n.path('')" exact>
+          <nuxt-link :to="$i18n.path('')" active-class="active" exact>
             {{ $t('links.home') }}
           </nuxt-link>
-          <nuxt-link :to="$i18n.path('services')" exact>
+          <nuxt-link :to="$i18n.path('services')" active-class="active" exact>
             {{ $t('links.services') }}
           </nuxt-link>
-          <nuxt-link :to="$i18n.path('work')" exact>
+          <nuxt-link :to="$i18n.path('work')" active-class="active" exact>
             {{ $t('links.work') }}
           </nuxt-link>
-          <nuxt-link :to="$i18n.path('about')" exact>
+          <nuxt-link :to="$i18n.path('about')" active-class="active" exact>
             {{ $t('links.about') }}
           </nuxt-link>
-          <nuxt-link :to="$i18n.path('contact')" exact>
+          <nuxt-link :to="$i18n.path('contact')" active-class="active" exact>
             {{ $t('links.contact') }}
           </nuxt-link>
-          <nuxt-link class="Header__Link" v-if="$i18n.locale === 'en'" :to="`/nl` + $route.fullPath" active-class="none" exact>NL</nuxt-link>
-          <nuxt-link class="Header__Link" v-else :to="$route.fullPath.replace(/^\/[^\/]+/, '')" active-class="none" exact>EN</nuxt-link>
+          <nuxt-link v-if="$i18n.locale === 'en'" :to="`/nl` + $route.fullPath" exact>NL</nuxt-link>
+          <nuxt-link v-else :to="$route.fullPath.replace(/^\/[^\/]+/, '')" exact>EN</nuxt-link>
         </nav>
       </div>
     </header>
@@ -28,8 +29,21 @@
 </template>
 
 <script>
-export default {}
+import Logo from '~/components/Logo.vue';
+export default {
+  computed: {
+    logoColor () {
+      return this.$store.state.logoColor
+    }
+  },
+  components: {
+    logo: Logo
+  }
+}
 </script>
 
-<style>
+<style lang="scss" scoped>
+a.active {
+  color: red;
+}
 </style>

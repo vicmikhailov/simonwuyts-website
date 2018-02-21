@@ -7,6 +7,9 @@
 
 <script>
 export default {
+  fetch({store}) {
+    store.commit('SET_HOMEPAGE', true);
+  },
   head() {
     return { title: this.$t('home.title') }
   }
