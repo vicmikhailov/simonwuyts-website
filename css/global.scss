@@ -1,0 +1,27 @@
+@font-face {
+	font-family: 'Graphik';
+	src: url('~/assets/fonts/Graphik-Regular.eot');
+	src: url('~/assets/fonts/Graphik-Regular.eot?#iefix') format('embedded-opentype'),
+		url('~/assets/fonts/Graphik-Regular.woff') format('woff'),
+		url('~/assets/fonts/Graphik-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Graphik';
+	src: url('~/assets/fonts/Graphik-Bold.eot');
+	src: url('~/assets/fonts/Graphik-Bold.eot?#iefix') format('embedded-opentype'),
+		url('~/assets/fonts/Graphik-Bold.woff') format('woff'),
+		url('~/assets/fonts/Graphik-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font: 1.4rem/1.6rem Graphik, sans-serif;
+}
