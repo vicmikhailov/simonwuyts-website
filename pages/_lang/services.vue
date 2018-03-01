@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>{{ $t('services.title') }}</h1>
-    <p>{{ $t('services.introduction') }}</p>
+    <p class="lead">{{ $t('services.introduction') }}</p>
     <div>
       <div>
         <h2>{{ $t('services.web.title') }}</h2>
@@ -33,8 +33,9 @@
 
 <script>
 export default {
-  fetch({store}) {
-    store.commit('SET_LOGO_COLOR', 'green');
+  fetch({ store }) {
+    store.commit('SET_PAGE', 'services');
+    store.commit('SET_LOGO_COLOR', '#FFF');
   },
   head() {
     return { title: this.$t('services.title') }

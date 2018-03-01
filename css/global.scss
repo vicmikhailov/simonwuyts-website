@@ -1,27 +1,24 @@
-@font-face {
-	font-family: 'Graphik';
-	src: url('~/assets/fonts/Graphik-Regular.eot');
-	src: url('~/assets/fonts/Graphik-Regular.eot?#iefix') format('embedded-opentype'),
-		url('~/assets/fonts/Graphik-Regular.woff') format('woff'),
-		url('~/assets/fonts/Graphik-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Graphik';
-	src: url('~/assets/fonts/Graphik-Bold.eot');
-	src: url('~/assets/fonts/Graphik-Bold.eot?#iefix') format('embedded-opentype'),
-		url('~/assets/fonts/Graphik-Bold.woff') format('woff'),
-		url('~/assets/fonts/Graphik-Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
-
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
-  font: 1.4rem/1.6rem Graphik, sans-serif;
+  font: 1.6rem/2.4rem 'bagatela', sans-serif;
+  height: 100%;
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+.page-enter-to,
+.page-leave {
+  opacity: 1;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.15s ease-in-out;
 }

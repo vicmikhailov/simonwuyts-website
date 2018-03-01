@@ -1,8 +1,9 @@
 export const state = () => ({
-  homepage: false,
+  currentPage: 'home',
+  loading: false,
   locales: ['en', 'nl'],
   locale: 'en',
-  logoColor: 'red'
+  logoColor: 'blue'
 })
 
 export const mutations = {
@@ -14,7 +15,10 @@ export const mutations = {
   SET_LOGO_COLOR(state, color) {
     state.logoColor = color;
   },
-  SET_HOMEPAGE(state, homepage) {
-    state.homepage = homepage;
+  SET_LOADING(state, loading) {
+    state.loading = loading;
+  },
+  SET_PAGE(state, currentPage) {
+    state.currentPage = currentPage;
   }
 }

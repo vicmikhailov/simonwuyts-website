@@ -1,6 +1,13 @@
 module.exports = {
+  loading: '~/components/Loader',
   head: {
-    titleTemplate: '%s - Simon Wuyts'
+    titleTemplate: '%s - Simon Wuyts',
+    link: [
+      {
+        rel: 'stylesheet',
+        href: 'https://use.typekit.net/xee3qdi.css'
+      }
+    ]
   },
   css: [
     {

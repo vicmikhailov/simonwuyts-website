@@ -7,6 +7,9 @@
 
 <script>
 export default {
+  fetch({ store }) {
+    store.commit('SET_PAGE', 'about');
+  },
   head() {
     return { title: this.$t('about.title') }
   }
