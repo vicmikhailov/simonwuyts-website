@@ -1,5 +1,5 @@
 module.exports = {
-  loading: '~/components/Loader',
+  loading: false,
   head: {
     titleTemplate: '%s - Simon Wuyts',
     link: [

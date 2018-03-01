@@ -1,7 +1,7 @@
 <template>
-<div class="content">
-  <slot></slot>
-</div>
+  <div class="content">
+    <slot/>
+  </div>
 </template>
 
 <style lang="scss">
