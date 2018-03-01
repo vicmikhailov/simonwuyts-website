@@ -5,7 +5,7 @@
     "node": true
   },
   "extends": [
-    "plugin:vue/essential"
+    "plugin:vue/strongly-recommended"
   ],
   "parserOptions": {
     "parser": "babel-eslint"
