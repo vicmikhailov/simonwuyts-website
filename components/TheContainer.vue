@@ -1,13 +1,16 @@
 <template>
-  <div class="container">
+  <div class="c-container">
     <slot/>
   </div>
 </template>
 
-<style lang="scss" scoped>
-.container {
+<style lang="scss">
+.c-container {
+  bottom: 0;
   display: flex;
-  height: 100%;
-  width: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 </style>

@@ -1,12 +1,12 @@
 <template>
-  <div class="sidepanel">
+  <div class="c-sidepanel">
     <slot/>
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '../css/colors';
-.sidepanel {
+.c-sidepanel {
   background: $blue-500;
   flex: 1;
   width: 50%;

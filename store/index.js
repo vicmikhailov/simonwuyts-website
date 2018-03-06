@@ -3,7 +3,7 @@ export const state = () => ({
   loading: false,
   locales: ['en', 'nl'],
   locale: 'en',
-  logoColor: 'blue'
+  logoColor: '#0076FF'
 })
 
 export const mutations = {

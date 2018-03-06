@@ -1,11 +1,11 @@
 <template>
-  <div class="content">
+  <div class="c-content">
     <slot/>
   </div>
 </template>
 
 <style lang="scss">
-.content {
+.c-content {
   flex: 1;
   overflow: auto;
   min-width: 40rem;
@@ -13,7 +13,7 @@
   width: 50%;
 }
 
-.content {
+.c-content {
   h1 {
     font: 4rem/5.6rem 'adelle-sans', sans-serif;
     font-weight: 800;
@@ -36,7 +36,5 @@
   p {
     color: #677175;
   }
-
-
 }
 </style>

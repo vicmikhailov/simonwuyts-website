@@ -1,7 +1,7 @@
 <template>
   <the-container>
     <the-logo
-      class="logo"
+      class="c-logo"
       :color="logoColor"
     />
     <the-preview/>
@@ -35,17 +35,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.container {
-  bottom: 0;
-  display: flex;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.logo {
+<style lang="scss">
+.c-logo {
   left: 4rem;
   position: absolute;
   top: 4rem;

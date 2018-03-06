@@ -1,41 +1,41 @@
 <template>
-  <nav class="navigation">
+  <nav class="c-navigation">
     <nuxt-link
       :to="$i18n.path('')"
-      class="navigation-link"
-      active-class="active"
+      class="c-navigation__item"
+      active-class="c-navigation__item--active"
       exact
     >
       {{ $t('links.home') }}
     </nuxt-link>
     <nuxt-link
       :to="$i18n.path('services')"
-      class="navigation-link"
-      active-class="active"
+      class="c-navigation__item"
+      active-class="c-navigation__item--active"
       exact
     >
       {{ $t('links.services') }}
     </nuxt-link>
     <nuxt-link
       :to="$i18n.path('work')"
-      class="navigation-link"
-      active-class="active"
+      class="c-navigation__item"
+      active-class="c-navigation__item--active"
       exact
     >
       {{ $t('links.work') }}
     </nuxt-link>
     <nuxt-link
       :to="$i18n.path('about')"
-      class="navigation-link"
-      active-class="active"
+      class="c-navigation__item"
+      active-class="c-navigation__item--active"
       exact
     >
       {{ $t('links.about') }}
     </nuxt-link>
     <nuxt-link
       :to="$i18n.path('contact')"
-      class="navigation-link"
-      active-class="active"
+      class="c-navigation__item"
+      active-class="c-navigation__item--active"
       exact
     >
       {{ $t('links.contact') }}
@@ -43,7 +43,7 @@
     <nuxt-link
       v-if="$i18n.locale === 'en'"
       :to="`/nl` + $route.fullPath"
-      class="navigation-language"
+      class="c-navigation__item c-navigation__item--language"
       exact
     >
       NL
@@ -51,7 +51,7 @@
     <nuxt-link
       v-else
       :to="$route.fullPath.replace(/^\/[^\/]+/, '')"
-      class="navigation-language"
+      class="c-navigation__item c-navigation__item--language"
       exact
     >
       EN
@@ -59,29 +59,28 @@
   </nav>
 </template>
 
-<style lang="scss" scoped>
-.navigation {
+<style lang="scss">
+.c-navigation {
   display: flex;
   font: 1.3rem/1 'adelle-sans', sans-serif;
   margin-bottom: 5.6rem;
 }
 
-.navigation-link,
-.navigation-language {
+.c-navigation__item {
   color: #8A99A0;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.navigation-link + .navigation-link {
+.c-navigation__item + .c-navigation__item {
   margin-left: 3.2rem;
 }
 
-.navigation-language {
+.c-navigation__item--language {
   margin-left: auto;
 }
 
-.navigation-link.active {
+.c-navigation__item--active {
   color: #262829;
   font-weight: 600;
 }
