@@ -46,7 +46,7 @@ export default {
   .lead {
     color: $gray-500;
     font: 2rem/3rem 'adelle-sans', sans-serif;
-    margin-bottom: 4rem;
+    margin-bottom: 3.2rem;
   }
 
   h2 {

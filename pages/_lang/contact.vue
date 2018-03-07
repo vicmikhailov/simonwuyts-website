@@ -1,7 +1,10 @@
 <template>
   <div>
     <h1>{{ $t('contact.title') }}</h1>
-    <p class="lead">{{ $t('contact.introduction') }}</p>
+    <p class="lead">
+      {{ $t('contact.introduction') }}<br>
+      <a href="mailto:hi@simonwuyts.com">{{ $t('contact.cta') }}</a>
+    </p>
     <p>
       Simon Wuyts<br>
       hi@simonwuyts.com<br>

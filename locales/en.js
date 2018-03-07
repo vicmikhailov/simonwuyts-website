@@ -56,6 +56,7 @@ module.exports = {
   },
   contact: {
     title: 'Contact',
-    introduction: `Think we can make great things together? Let's get in touch!`
+    introduction: `Think we can make great things together?`,
+    cta: `Let's get in touch!`
   }
 };
