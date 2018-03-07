@@ -1,7 +1,8 @@
 <template>
   <div>
     <h1>{{ $t('about.title') }}</h1>
-    <p>{{ $t('about.description') }}</p>
+    <p class="lead">{{ $t('about.introduction') }}</p>
+    <div v-html="$t('about.description')"></div>
   </div>
 </template>
 

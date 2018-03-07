@@ -13,10 +13,6 @@ module.exports = {
     {
       src: '~/css/reset.scss',
       lang: 'scss'
-    },
-    {
-      src: '~/css/global.scss',
-      lang: 'scss'
     }
   ],
   build: {

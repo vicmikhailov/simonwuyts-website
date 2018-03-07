@@ -6,7 +6,6 @@
     />
     <the-preview/>
     <the-content>
-      <the-navigation/>
       <nuxt/>
     </the-content>
   </the-container>
@@ -16,7 +15,6 @@
 import TheContainer from '~/components/TheContainer.vue';
 import TheContent from '~/components/TheContent.vue';
 import TheLogo from '~/components/TheLogo.vue';
-import TheNavigation from '~/components/TheNavigation.vue';
 import ThePreview from '~/components/ThePreview.vue';
 
 export default {
@@ -24,7 +22,6 @@ export default {
     TheContainer,
     TheContent,
     TheLogo,
-    TheNavigation,
     ThePreview
   },
   computed: {
@@ -36,6 +33,40 @@ export default {
 </script>
 
 <style lang="scss">
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font: 1.6rem/2.4rem 'bagatela', sans-serif;
+  height: 100%;
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+.page-enter-to,
+.page-leave {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.page-enter {
+  transform: translateY(0.8rem);
+}
+
+.page-leave-to {
+  transform: translateY(-0.8rem);
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.2s ease-in-out;
+}
+
 .c-logo {
   left: 4rem;
   position: absolute;

@@ -60,6 +60,7 @@
 </template>
 
 <style lang="scss">
+@import '../css/colors';
 .c-navigation {
   display: flex;
   font: 1.3rem/1 'adelle-sans', sans-serif;
@@ -67,7 +68,7 @@
 }
 
 .c-navigation__item {
-  color: #8A99A0;
+  color: $gray-400;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -76,12 +77,12 @@
   margin-left: 3.2rem;
 }
 
-.c-navigation__item--language {
+.c-navigation__item.c-navigation__item--language {
   margin-left: auto;
 }
 
 .c-navigation__item--active {
-  color: #262829;
+  color: $gray-900;
   font-weight: 600;
 }
 </style>
