@@ -39,8 +39,15 @@ html {
 }
 
 body {
-  font: 1.6rem/2.4rem 'bagatela', sans-serif;
+  box-sizing: border-box;
+  font: 1.6rem/2.4rem 'bagatela', Georgia, serif;
   height: 100%;
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
 }
 
 .page-enter,

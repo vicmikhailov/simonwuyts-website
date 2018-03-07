@@ -21,10 +21,10 @@ export default {
 @import '../css/colors';
 .c-content {
   display: flex;
-  flex: 1;
+  flex: none;
   flex-direction: column;
+  min-width: 56rem;
   overflow: auto;
-  min-width: 40rem;
   padding: 5.6rem 7.2rem;
   width: 50%;
 }
@@ -36,7 +36,7 @@ export default {
   max-width: 56rem;
 }
 
-.c-content {
+.c-content__wrapper {
   h1 {
     font: 4rem/5.6rem 'adelle-sans', sans-serif;
     font-weight: 800;
@@ -45,8 +45,13 @@ export default {
 
   .lead {
     color: $gray-500;
-    font: 2rem/3rem 'adelle-sans', sans-serif;
+    font: 1.8rem/3rem 'adelle-sans', sans-serif;
     margin-bottom: 3.2rem;
+
+    strong {
+      color: $gray-900;
+      font-weight: 600;
+    }
   }
 
   h2 {
@@ -59,6 +64,15 @@ export default {
   p {
     color: $gray-500;
     margin-bottom: 1.6rem;
+  }
+  
+  a {
+    color: $blue-500;
+    text-decoration: none;
+    
+    &:hover {
+      border-bottom: 1px solid $blue-500;
+    }
   }
 }
 </style>

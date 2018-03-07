@@ -15,7 +15,7 @@ module.exports = {
   },
   home: {
     title: 'Home',
-    introduction: `Interaction designer and front-end developer, dreams in HTML, CSS and Javascript, lives in Ghent, Belgium. Helps other people build digital products.`
+    introduction: `<strong>Interaction designer</strong> and <strong>front-end developer</strong>. Dreams in HTML, CSS and Javascript, lives in Ghent, Belgium. Helps other people build digital products.`
   },
   services: {
     title: 'Services',
@@ -51,8 +51,8 @@ module.exports = {
   },
   about: {
     title: 'About',
-    introduction: `This is me, Simon Wuyts, ${myAge()} years old, living in and in love with Ghent.`,
-    description: `<p>After getting my master's degree in Communication Sciences I decided to become a full-time digital designer. Late 2013, I began working as an Interaction Designer at Yesplan, a Ghent-based software startup. In 2016 I worked as a freelance digital designer for Mediahuis, one of Belgium's biggest media companies. Later that year I joined Mono Company, a group of digital designers with a shared love of great design and technology. Since 2018 I'm again focused on various smaller freelance projects.</p><p>Apart from design and code, I love playing the piano, going for a run or watching a movie in one of Ghent's beautiful cinema's. I also love coffee, so we should definitely grab one together.</p>`
+    introduction: `Hi, I'm Simon, ${myAge()} years old, living in and in love with Ghent.`,
+    description: `<p>After getting my master's degree in Communication Sciences I decided to become a full-time digital designer. Late 2013, I began working as an Interaction Designer at <a href="http://www.yesplan.be/" target="_blank">Yesplan</a>, a Ghent-based software startup.</p><p>In 2016 I worked as a freelance digital designer for <a href="http://www.mediahuis.be/" target="_blank">Mediahuis</a>, one of Belgium's biggest media companies. Later that year I joined <a href="http://mono.company/" target="_blank">Mono Company</a>, a group of digital designers with a shared love of great design and technology. Since 2018 I'm again focused on various smaller freelance projects.</p><p>Apart from design and code, I love playing the piano, going for a run or watching a movie in one of Ghent's beautiful cinema's. I also love coffee, so we should definitely grab one together.</p>`
   },
   contact: {
     title: 'Contact',

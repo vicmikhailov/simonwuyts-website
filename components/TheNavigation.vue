@@ -71,6 +71,11 @@
   color: $gray-400;
   text-decoration: none;
   text-transform: uppercase;
+  transition: color 0.1s linear;
+  
+  &:hover:not(.c-navigation__item--active) {
+    color: $blue-500;
+  }
 }
 
 .c-navigation__item + .c-navigation__item {

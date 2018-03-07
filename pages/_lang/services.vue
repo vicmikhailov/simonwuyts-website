@@ -36,7 +36,7 @@ export default {
   fetch({ store }) {
     store.commit('SET_PAGE', 'services');
     store.commit('SET_LOGO_COLOR', '#FFF');
-    store.commit('SET_PREVIEW_COLOR', '#EFF2F3');
+    store.commit('SET_PREVIEW_COLOR', '#0076FF');
   },
   head() {
     return { title: this.$t('services.title') }

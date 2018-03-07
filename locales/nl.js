@@ -15,7 +15,7 @@ module.exports = {
   },
   home: {
     title: 'Home',
-    introduction: `Interaction designer en front-end developer, droomt in HTML, CSS en Javascript, woont in Gent. Helpt ondernemers bij het bouwen van digitale oplossingen.`
+    introduction: `<strong>Interaction designer</strong> en <strong>front-end developer</strong>, droomt in HTML, CSS en Javascript, woont in Gent. Helpt ondernemers bij het bouwen van digitale oplossingen.`
   },
   services: {
     title: 'Diensten',
@@ -51,8 +51,8 @@ module.exports = {
   },
   about: {
     title: 'Over mij',
-    introduction: `Dit ben ik, Simon Wuyts, ${myAge()} jaar en Antwerpenaar in Gent.`,
-    description: `<p>Nadat ik afstudeerde als master in de communicatiewetenschappen besloot ik mij voltijds toe te leggen op digital design. Eind 2013 startte ik als Interaction Designer bij Yesplan, een Gentse softwarestart-up. In 2016 werkte ik als freelancer voor Mediahuis, één van België's grootste mediabedrijven. Later dat jaar ging ik aan de slag bij Mono Company, een groep digital designers met een gedeelde liefde voor technologie en goed design. Sinds 2018 focus ik me weer op verschillende kleinere freelanceprojecten.</p><p>Naast ontwerpen hou ik van piano spelen, de longen uit mijn lijf lopen of een filmpje meepikken in één van de prachtige bioscopen van Gent. Ik hou enorm van koffie, dus waarom drinken we er niet eens een samen?</p>`
+    introduction: `Hey, ik ben Simon, ${myAge()} jaar en Antwerpenaar in Gent.`,
+    description: `<p>Nadat ik afstudeerde als master in de communicatiewetenschappen besloot ik mij voltijds toe te leggen op digital design. Eind 2013 startte ik als Interaction Designer bij <a href="http://www.yesplan.be/">Yesplan</a>, een Gentse softwarestart-up.</p><p>In 2016 werkte ik als freelancer voor <a href="http://www.mediahuis.be/">Mediahuis</a>, één van België's grootste mediabedrijven. Later dat jaar ging ik aan de slag bij <a href="http://mono.company">Mono Company</a>, een groep digital designers met een gedeelde liefde voor technologie en goed design. Sinds 2018 focus ik me weer op verschillende kleinere freelanceprojecten.</p><p>Naast ontwerpen hou ik van piano spelen, de longen uit mijn lijf lopen of een filmpje meepikken in één van de prachtige bioscopen van Gent. Ik hou enorm van koffie, dus waarom drinken we er niet eens een samen?</p>`
   },
   contact: {
     title: 'Contact',

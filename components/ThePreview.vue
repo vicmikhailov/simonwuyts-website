@@ -27,19 +27,17 @@ export default {
 @import '../css/colors';
 .c-preview {
   overflow: hidden;
-  flex: 1;
+  flex: 1 1 50%;
   position: relative;
   transition: background-color 0.15s linear;
-  width: 50%;
 }
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity .25s;
+  transition: opacity 0.5s;
 }
 
-.fade-enter,
-.fade-leave-to {
+.fade-enter {
   opacity: 0;
 }
 </style>

@@ -5,6 +5,8 @@
     :src="src"
     :srcset="srcSet"
     :alt="alt"
+    :width="width"
+    :style="offsetStyles"
   >
 </template>
 
@@ -25,7 +27,7 @@ export default {
     },
     width: {
       type: Number,
-      default: null
+      required: true
     },
     srcRetina: {
       type: String,
@@ -34,6 +36,10 @@ export default {
     widthRetina: {
       type: Number,
       default: null
+    },
+    horizontalOffset: {
+      type: Number,
+      default: 0
     }
   },
   computed: {
@@ -50,6 +56,15 @@ export default {
         center: 'c-preview-image--center',
       };
       return alignClasses[this.align];
+    },
+    offsetStyles() {
+      if(this.horizontalOffset > 0 && this.align === 'center') {
+        return {
+          transform: `translate(-50%, ${(50 - this.horizontalOffset) * -1}%)`
+        }
+      } else {
+        return {}
+      }
     }
   }
 }
@@ -63,6 +78,14 @@ export default {
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+.c-preview-image--center {
+  left: 50%;
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 </style>
 

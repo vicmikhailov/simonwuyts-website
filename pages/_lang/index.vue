@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Simon Wuyts</h1>
-    <p class="lead">{{ $t('home.introduction') }}</p>
+    <p class="lead" v-html="$t('home.introduction')"></p>
     <portal to="preview">
       <preview-image
         src="/images/simon-home.jpg"

@@ -5,7 +5,17 @@
 </template>
 
 <style lang="scss">
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .c-container {
+  animation: 0.3s linear 0.3s 1 both fadeIn;
   bottom: 0;
   display: flex;
   left: 0;

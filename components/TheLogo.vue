@@ -83,6 +83,7 @@ export default {
 }
 
 .c-logo {
+  filter: drop-shadow(0 0.7rem 1rem rgba(0, 0, 0, 0.2));
   height: 5.6rem;
   width: 5.6rem;
 }
