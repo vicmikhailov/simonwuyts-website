@@ -72,7 +72,7 @@
   text-decoration: none;
   text-transform: uppercase;
   transition: color 0.1s linear;
-  
+
   &:hover:not(.c-navigation__item--active) {
     color: $blue-500;
   }
@@ -89,5 +89,11 @@
 .c-navigation__item--active {
   color: $gray-900;
   font-weight: 600;
+}
+
+@media (max-width: 53em) {
+  .c-navigation {
+    display: none;
+  }
 }
 </style>

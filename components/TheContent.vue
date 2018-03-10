@@ -20,20 +20,7 @@ export default {
 <style lang="scss">
 @import '../css/colors';
 .c-content {
-  display: flex;
-  flex: none;
-  flex-direction: column;
-  min-width: 56rem;
-  overflow: auto;
-  padding: 5.6rem 7.2rem;
-  width: 50%;
-}
-
-.c-content__wrapper {
-  flex: none;
-  margin-top: auto;
-  margin-bottom: auto;
-  max-width: 56rem;
+  padding: 3.2rem;
 }
 
 .c-content__wrapper {
@@ -65,14 +52,33 @@ export default {
     color: $gray-500;
     margin-bottom: 1.6rem;
   }
-  
+
   a {
     color: $blue-500;
     text-decoration: none;
-    
+
     &:hover {
       border-bottom: 1px solid $blue-500;
     }
+  }
+}
+
+@media (min-width: 53em) {
+  .c-content {
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    min-width: 56rem;
+    overflow: auto;
+    padding: 5.6rem 7.2rem;
+    width: 50%;
+  }
+
+  .c-content__wrapper {
+    flex: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 56rem;
   }
 }
 </style>

@@ -47,7 +47,13 @@ module.exports = {
   },
   work: {
     title: 'Work',
-    introduction: `Some of the companies I worked with are...`
+    introduction: `To get an idea of my work, here are some public projects I worked on. Since I can't show everything here, I'm happy to discuss more of my work in person.`
+  },
+  cases: {
+    archive: {
+      title: 'Newspaper Archive Website',
+      introduction: `For <a href="http://www.gva.be/" target="_blank">Gazet van Antwerpen</a>, I designed a refreshed version of their newspaper archive website. With digitized newspapers dating back to 1891, this online treasure house deserves a design that puts search up front.`
+    }
   },
   about: {
     title: 'About',

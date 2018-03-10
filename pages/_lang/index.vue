@@ -1,7 +1,10 @@
 <template>
   <div>
     <h1>Simon Wuyts</h1>
-    <p class="lead" v-html="$t('home.introduction')"></p>
+    <p
+      class="lead"
+      v-html="$t('home.introduction')"
+    />
     <portal to="preview">
       <preview-image
         src="/images/simon-home.jpg"

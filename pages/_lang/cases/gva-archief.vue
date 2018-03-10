@@ -1,16 +1,15 @@
 <template>
   <div>
-    <h1>Case: GVA Archief</h1>
-    <p>Introductie</p>
+    <h1>{{ $t('cases.archive.title') }}</h1>
+    <p class="lead" v-html="$t('cases.archive.introduction')"></p>
     <portal to="preview">
       <preview-image
-        src="/images/work/gva-preview.png"
-        src-retina="/images/work/gva-preview@2x.png"
+        src="/images/work/gva-archive-preview.png"
+        src-retina="/images/work/gva-archive-preview@2x.png"
         :width="666"
         :width-retina="1332"
         alt="Mobile App for GVA"
-        align="center"
-        :horizontal-offset="10"
+        align="right"
       />
     </portal>
   </div>
@@ -26,7 +25,7 @@ export default {
     store.commit('SET_PREVIEW_COLOR', '#DA291C');
   },
   head() {
-    return { title: 'Case: GVA Archief' }
+    return { title: 'GVA Archief' }
   },
   components: {
     PreviewImage

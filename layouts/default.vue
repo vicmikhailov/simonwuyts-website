@@ -33,8 +33,11 @@ export default {
 </script>
 
 <style lang="scss">
-html {
+:root {
   font-size: 62.5%;
+}
+
+html {
   height: 100%;
 }
 
@@ -75,9 +78,16 @@ body {
 }
 
 .c-logo {
-  left: 4rem;
+  left: 2.4rem;
   position: absolute;
-  top: 4rem;
+  top: 2.4rem;
   z-index: 5;
+}
+
+@media (min-width: 53em) {
+  .c-logo {
+    left: 4rem;
+    top: 4rem;
+  }
 }
 </style>

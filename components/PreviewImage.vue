@@ -37,7 +37,7 @@ export default {
       type: Number,
       default: null
     },
-    horizontalOffset: {
+    verticalOffset: {
       type: Number,
       default: 0
     }
@@ -54,15 +54,21 @@ export default {
       const alignClasses = {
         full: 'c-preview-image--full',
         center: 'c-preview-image--center',
+        right: 'c-preview-image--right',
       };
       return alignClasses[this.align];
     },
     offsetStyles() {
-      if(this.horizontalOffset > 0 && this.align === 'center') {
+      if(this.verticalOffset > 0 && this.align === 'center') {
         return {
-          transform: `translate(-50%, ${(50 - this.horizontalOffset) * -1}%)`
+          transform: `translate(-50%, ${(50 - this.verticalOffset) * -1}%)`
         }
-      } else {
+      } else if(this.verticalOffset > 0 && this.align === 'right') {
+        return {
+          transform: `translate(0, ${(50 - this.verticalOffset) * -1}%)`
+        }
+      }
+      else {
         return {}
       }
     }
@@ -82,10 +88,27 @@ export default {
 
 .c-preview-image--center {
   left: 50%;
-  max-width: 100%;
+  max-height: 90%;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.c-preview-image--right {
+  max-height: 90%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: auto;
+}
+
+@media (min-width: 53em) {
+  .c-preview-image--center,
+  .c-preview-image--right {
+    max-height: none;
+    max-width: 100%;
+  }
 }
 </style>
 

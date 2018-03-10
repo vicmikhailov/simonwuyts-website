@@ -2,6 +2,15 @@
   <div>
     <h1>{{ $t('work.title') }}</h1>
     <p class="lead">{{ $t('work.introduction') }}</p>
+    <h2>Cases</h2>
+    <p>
+      <nuxt-link
+        :to="$i18n.path('cases/gva-archief')"
+        exact
+      >
+        {{ $t('cases.archive.title') }}
+      </nuxt-link>
+    </p>
   </div>
 </template>
 

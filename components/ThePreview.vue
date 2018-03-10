@@ -26,8 +26,8 @@ export default {
 <style lang="scss">
 @import '../css/colors';
 .c-preview {
+  height: 40vh;
   overflow: hidden;
-  flex: 1 1 50%;
   position: relative;
   transition: background-color 0.15s linear;
 }
@@ -39,5 +39,13 @@ export default {
 
 .fade-enter {
   opacity: 0;
+}
+
+@media (min-width: 53em) {
+  .c-preview {
+    flex: 1 1 50%;
+    height: auto;
+    max-width: 80rem;
+  }
 }
 </style>

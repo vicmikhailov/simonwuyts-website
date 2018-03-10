@@ -84,8 +84,8 @@ export default {
 
 .c-logo {
   filter: drop-shadow(0 0.7rem 1rem rgba(0, 0, 0, 0.2));
-  height: 5.6rem;
-  width: 5.6rem;
+  height: 4rem;
+  width: 4rem;
 }
 
 .c-logo__circle {
@@ -100,5 +100,12 @@ export default {
 .c-logo__line--animating {
   stroke-dashoffset: 194;
   transition: stroke-dashoffset 0.6s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+
+@media (min-width: 53em) {
+  .c-logo {
+    height: 5.6rem;
+    width: 5.6rem;
+  }
 }
 </style>
