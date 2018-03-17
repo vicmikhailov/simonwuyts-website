@@ -13,6 +13,10 @@ module.exports = {
     about: 'Over mij',
     contact: 'Contact'
   },
+  social: {
+    title: 'Vind me online of ',
+    cta: 'stuur een mailtje'
+  },
   home: {
     title: 'Home',
     introduction: `<strong>Interaction designer</strong> en <strong>front-end developer</strong>, droomt in HTML, CSS en Javascript, woont in Gent. Helpt ondernemers bij het bouwen van digitale oplossingen.`
@@ -47,16 +51,40 @@ module.exports = {
   },
   work: {
     title: 'Portfolio',
-    introduction: `Enkele bedrijven waar ik mee samenwerkte...`
+    introduction: `Om een idee te krijgen van mijn werk vindt u hier een overzicht van enkele van mijn publieke projecten. Jammer genoeg kan ik hier niet alles tonen, maar ik licht mijn werk graag uitgebreider toe in een persoonlijk gesprek.`
+  },
+  cases: {
+    archive: {
+      title: 'Archiefwebsite Gazet van Antwerpen',
+      introduction: `Voor <a href="http://www.gva.be/" target="_blank">Gazet van Antwerpen</a> maakte ik een nieuw ontwerp voor hun archiefwebsite. Deze digitale schatkist, met gedigitaliseerde kranten vanaf 1891, verdient een ontwerp dat inhoud op de eerste plaats zet.`,
+      copyright: `Logo's en merken zijn eigendom van Mediahuis`
+    },
+    cycling: {
+      title: 'Mobiele fietsroutes-webapp',
+      introduction: `Om haar prachtige fietsroutes te promoten besloot regio <a href="https://www.kempen.be/" target="_blank">De Kempen</a> de lezers van Gazet van Antwerpen een gratis mobiele webapp aan te bieden met fietsroutes en lokale tips.`,
+      description: `<p>De ontwikkeling van deze website stelde me voor een aantal uitdagingen: de oplevertijd was beperkt het eindresultaat moest offline werken én compatibel zijn met oudere smartphones. Daarom koos ik voor een statische website in combinatie met een Application Cache. Die technologie is iets ouder en omslachtiger dan het nieuwere Service Workers, maar was de perfecte keuze om tegelijk offline-opties en een zo hoog mogelijke compatibiliteit te garanderen.</p>`,
+      copyright: `Logo's en merken zijn eigendom van Mediahuis en Regio Kempen`
+    },
+    bedrock: {
+      title: 'Bedrock Mobile Demo',
+      introduction: `Bij Mono ontwikkelden we onze eigen open-source prototyping tool <a href="https://bedrock.mono.company/" target="_blank">Bedrock</a>. Om de uitgebreide opties daarvan te tonen aan geïnteresseerde developers ontwikkelde ik een mobiele demo-webapp.`,
+      description: `<p>Deze fictieve kleurenpalet-applicatie is volledig gebouwd met webtechnologie (HTML, CSS en Javascript) n maakt gebruik van <a href="https://pugjs.org/" target="_blank">PugJS</a> om makkelijk verschillende componenten te herbruiken.</p>`
+    },
+    portfolio: {
+      title: 'Simonwuyts.com',
+      introduction: `Geen betere manier om je front-endskills te tonen, dan de broncode van je eigen website open-source te maken. Ik leerde zelf heel veel bij van open-sourceprojecten en inspireer dan ook graag anderen met mijn code.`,
+      description: `<p>Werken aan een nieuwe portfoliowebsite betekent voor mij ook experimenteren met nieuwe technologieën. Na al een tijdje verkocht te zijn aan <a href="https://vuejs.org/" target="_blank">Vue JS</a> besloot ik voor dit project gebruik te maken van <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>. Dat framework liet me toe deze website op Vue te baseren en biedt een aantal extra's zoals server-side rendering en routing.</p><p>Wie geïnteresseerd is, kan een kijkje nemen in <a href="https://github.com/simonwuyts/portfolio-website" target="_blank">de broncode op Github</a>.</p>`
+
+    }
   },
   about: {
     title: 'Over mij',
     introduction: `Hey, ik ben Simon, ${myAge()} jaar en Antwerpenaar in Gent.`,
-    description: `<p>Nadat ik afstudeerde als master in de communicatiewetenschappen besloot ik mij voltijds toe te leggen op digital design. Eind 2013 startte ik als Interaction Designer bij <a href="http://www.yesplan.be/">Yesplan</a>, een Gentse softwarestart-up.</p><p>In 2016 werkte ik als freelancer voor <a href="http://www.mediahuis.be/">Mediahuis</a>, één van België's grootste mediabedrijven. Later dat jaar ging ik aan de slag bij <a href="http://mono.company">Mono Company</a>, een groep digital designers met een gedeelde liefde voor technologie en goed design. Sinds 2018 focus ik me weer op verschillende kleinere freelanceprojecten.</p><p>Naast ontwerpen hou ik van piano spelen, de longen uit mijn lijf lopen of een filmpje meepikken in één van de prachtige bioscopen van Gent. Ik hou enorm van koffie, dus waarom drinken we er niet eens een samen?</p>`
+    description: `<h2>Professioneel</h2><p>Nadat ik afstudeerde als master in de communicatiewetenschappen besloot ik mij voltijds toe te leggen op digital design. Eind 2013 startte ik als Interaction Designer bij <a href="http://www.yesplan.be/" target="_blank">Yesplan</a>, een Gentse softwarestart-up.</p><p>In 2016 werkte ik als freelancer voor <a href="http://www.mediahuis.be/" target="_blank">Mediahuis</a>, één van België's grootste mediabedrijven. Later dat jaar ging ik aan de slag bij <a href="http://mono.company" target="_blank">Mono Company</a>, een groep digital designers met een gedeelde liefde voor technologie en goed design. Sinds 2018 focus ik me weer op verschillende kleinere freelanceprojecten.</p><h2>Persoonlijk</h2><p>Naast ontwerpen hou ik van piano spelen, de longen uit mijn lijf lopen of een filmpje meepikken in één van de prachtige bioscopen van Gent. Ik hou enorm van koffie, dus waarom drinken we er niet eens een samen?</p>`
   },
   contact: {
     title: 'Contact',
-    introduction: `Denk je dat we samen iets fantastisch kunnen maken?`,
+    introduction: `Zin om samen iets fantastisch te maken?`,
     cta: `Laat het me weten!`
   }
 };

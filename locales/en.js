@@ -58,7 +58,7 @@ module.exports = {
     archive: {
       title: 'Newspaper Archive Website',
       introduction: `For <a href="http://www.gva.be/" target="_blank">Gazet van Antwerpen</a>, I designed a refreshed version of their newspaper archive website. With digitized newspapers dating back to 1891, this online treasure house deserves a design that puts its content up front.`,
-      copyright: 'All logos and brand elements are property of Mediahuis'
+      copyright: `All logo's and brand elements are property of Mediahuis`
     },
     cycling: {
       title: 'Cycling Routes Mobile Website',
@@ -75,7 +75,6 @@ module.exports = {
       title: 'This very website',
       introduction: `What better way to show some of your front-end skills than making your own website open source? I learned a lot from open source projects myself, so I'm happy to inspire other people with my code.`,
       description: `<p>I consider a portfolio website the perfect project to explore some new technologies. After a long time love for <a href="https://vuejs.org/" target="_blank">Vue JS</a> and some research I decided to go with <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>. It's a lightweight framework that allowed me to write Vue code and easily add things like SSR and routing to it.</p><p>Feel free to take a look at <a href="https://github.com/simonwuyts/portfolio-website" target="_blank">the source code on Github</a>.</p>`
-
     }
   },
   about: {
