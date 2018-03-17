@@ -23,7 +23,7 @@ module.exports = {
   },
   services: {
     title: 'Diensten',
-    introduction: `Als freelancer met een combinatie van grafische en technische kennis kan ik de ontwikkeling van een project opvolgen van wireframes, over interactieve prototypes tot samenwerking met developers. Mijn ervaring met zowel kleine start-ups als gevestigde bedrijven leerde me voor elk project het meest tijds- en kostenefficiënte designproces uit te stippelen.`,
+    introduction: `Als freelancer met een combinatie van grafische en technische kennis kan ik de ontwikkeling van een project opvolgen van wireframes, over interactieve prototypes tot samenwerking met developers. Samen stippelen we het meest tijds- en kostenefficiënte designproces uit.`,
     web: {
       title: 'Web App Design',
       description: `Goed design is erg bepalend voor de kwaliteit van een webapp. Of het nu om het ontwerpen van een nieuw product gaat of om het opfrissen van een bestaande applicatie, ik help graag om uw project te laten uitblinken in gebruiksgemak.`

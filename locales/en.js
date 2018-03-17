@@ -23,7 +23,7 @@ module.exports = {
   },
   services: {
     title: 'Services',
-    introduction: `As a freelancer with both graphical and technical skills, I can work on a project from the early stages (wireframes, mockups, prototypes) to the actual implementation (writing production ready code). By working with companies of different sizes I learned to map out the most cost and time efficient design process for every project.`,
+    introduction: `As a freelancer with both graphical and technical skills, I can work on a project from the early stages (wireframes, mockups, prototypes) to the actual implementation (writing production ready code). Together we map out the most cost and time efficient design process.`,
     web: {
       title: 'Web App Design',
       description: `Good design contributes a lot to the global quality of a web app. Whether it's designing a new product or refreshing the design of an existing application, I'm happy to help making your project beautiful and easy to use.`
