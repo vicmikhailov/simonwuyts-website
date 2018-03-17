@@ -1,3 +1,14 @@
-# My personal website
+# Simon Wuyts, Interaction Designer
 
-Here you can find the source code of my personal website, [simonwuyts.com](http://simonwuyts.com). This website is based on the amazing [Nuxt.js](https://github.com/nuxt/nuxt.js/) framework.
+**This is the source code of my personal website, [simonwuyts.com](https://www.simonwuyts.com).**
+
+---
+
+Making this website would have been a lot harder without these wonderful open-source projects:
+
+- [Vue.js](https://github.com/vuejs/vue)
+- [Nuxt.js](https://github.com/nuxt/nuxt.js/)
+- [Vue i18n](https://github.com/kazupon/vue-i18n)
+- [PortalVue](https://github.com/LinusBorg/portal-vue)
+
+If you have any questions about this website, feel free to [send me a message](mailto:hi@simonwuyts.com).
