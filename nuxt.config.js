@@ -24,19 +24,19 @@ module.exports = {
         content: 'interaction design, ux design, frontend, gent, belgium, simon, wuyts'
       },
       {
-        name: 'og:title',
+        property: 'og:title',
         content: 'Simon Wuyts - Interaction Designer'
       },
       {
-        name: 'og:description',
+        property: 'og:description',
         content: 'Interaction designer and front-end developer. Dreams in HTML, CSS and Javascript, lives in Ghent, Belgium. Helps other people build digital products.'
       },
       {
-        name: 'og:image',
+        property: 'og:image',
         content: 'http://www.simonwuyts.com/images/social.png'
       },
       {
-        name: 'og:url',
+        property: 'og:url',
         content: 'http://www.simonwuyts.com/'
       },
       {
