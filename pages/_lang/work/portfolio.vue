@@ -9,8 +9,8 @@
     <social-links/>
     <portal to="preview">
       <preview-image
-        src="/images/work/portfolio-preview.png"
-        src-retina="/images/work/portfolio-preview@2x.png"
+        src="/images/work/portfolio.png"
+        src-retina="/images/work/portfolio@2x.png"
         :width="666"
         :width-retina="1332"
         alt="Portfolio Website"
