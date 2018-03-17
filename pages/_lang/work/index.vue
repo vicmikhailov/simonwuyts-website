@@ -20,14 +20,14 @@
           {{ $t('cases.cycling.title') }}
         </nuxt-link>
       </li>
-      <li class="c-cases__item">
+      <!-- <li class="c-cases__item">
         <nuxt-link
           :to="$i18n.path('work/bedrock')"
           exact
         >
           {{ $t('cases.bedrock.title') }}
         </nuxt-link>
-      </li>
+      </li> -->
       <li class="c-cases__item">
         <nuxt-link
           :to="$i18n.path('work/portfolio')"
