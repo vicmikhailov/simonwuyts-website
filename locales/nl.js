@@ -51,7 +51,8 @@ module.exports = {
   },
   work: {
     title: 'Portfolio',
-    introduction: `Om een idee te krijgen van mijn werk vindt u hier een overzicht van enkele van mijn publieke projecten. Jammer genoeg kan ik hier niet alles tonen, maar ik licht mijn werk graag uitgebreider toe in een persoonlijk gesprek.`
+    introduction: `Om een idee te krijgen van mijn werk vindt u hier een overzicht van enkele van mijn publieke projecten. Jammer genoeg kan ik hier niet alles tonen, maar ik licht mijn werk graag uitgebreider toe in een persoonlijk gesprek.`,
+    projects: 'Projecten'
   },
   cases: {
     archive: {
