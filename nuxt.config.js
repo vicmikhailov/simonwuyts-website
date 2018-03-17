@@ -14,13 +14,41 @@ module.exports = {
       {
         'http-equiv': 'X-UA-Compatible',
         content: 'ie=edge'
-      }
+      },
+      {
+        name: 'description',
+        content: 'Interaction designer and front-end developer. Dreams in HTML, CSS and Javascript, lives in Ghent, Belgium. Helps other people build digital products.'
+      },
+      {
+        name: 'keywords',
+        content: 'interaction design, ux design, frontend, gent, belgium, simon, wuyts'
+      },
+      {
+        name: 'og:title',
+        content: 'Simon Wuyts - Interaction Designer'
+      },
+      {
+        name: 'og:description',
+        content: 'Interaction designer and front-end developer. Dreams in HTML, CSS and Javascript, lives in Ghent, Belgium. Helps other people build digital products.'
+      },
+      {
+        name: 'og:image',
+        content: 'http://www.simonwuyts.com/images/social.png'
+      },
+      {
+        name: 'og:url',
+        content: 'http://www.simonwuyts.com/'
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image'
+      },
+      {
+        name: 'twitter:image:alt',
+        content: 'Simon Wuyts - Interaction Designer'
+      },
     ],
     link: [
-      {
-        rel: 'stylesheet',
-        href: 'https://use.typekit.net/xee3qdi.css'
-      },
       {
         rel: 'icon',
         type: 'image/png',
@@ -82,13 +110,29 @@ module.exports = {
     }
   ],
   build: {
-    vendor: ['vue-i18n']
+    vendor: [
+      'vue-i18n',
+      'gsap'
+    ]
   },
   router: {
     middleware: 'i18n'
   },
   plugins: [
     '~/plugins/i18n.js',
-    '~/plugins/vue-portal.js'
+    '~/plugins/vue-portal.js',
+    {
+      src: '~/plugins/typekit.js',
+      ssr: false
+    }
+  ],
+  modules: [
+    [
+      'nuxt-matomo',
+      {
+        matomoUrl: '//analytics.simonwuyts.com/',
+        siteId: 1
+      }
+    ],
   ]
 }

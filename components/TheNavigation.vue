@@ -12,7 +12,6 @@
       :to="$i18n.path('services')"
       class="c-navigation__item"
       active-class="c-navigation__item--active"
-      exact
     >
       {{ $t('links.services') }}
     </nuxt-link>
@@ -20,7 +19,6 @@
       :to="$i18n.path('work')"
       class="c-navigation__item"
       active-class="c-navigation__item--active"
-      exact
     >
       {{ $t('links.work') }}
     </nuxt-link>
@@ -28,7 +26,6 @@
       :to="$i18n.path('about')"
       class="c-navigation__item"
       active-class="c-navigation__item--active"
-      exact
     >
       {{ $t('links.about') }}
     </nuxt-link>
@@ -36,35 +33,32 @@
       :to="$i18n.path('contact')"
       class="c-navigation__item"
       active-class="c-navigation__item--active"
-      exact
     >
       {{ $t('links.contact') }}
     </nuxt-link>
-    <nuxt-link
-      v-if="$i18n.locale === 'en'"
-      :to="`/nl` + $route.fullPath"
-      class="c-navigation__item c-navigation__item--language"
-      exact
-    >
-      NL
-    </nuxt-link>
-    <nuxt-link
-      v-else
-      :to="$route.fullPath.replace(/^\/[^\/]+/, '')"
-      class="c-navigation__item c-navigation__item--language"
-      exact
-    >
-      EN
-    </nuxt-link>
+    <language-switcher class="c-language-switcher--desktop"/>
   </nav>
 </template>
+
+<script>
+import LanguageSwitcher from '~/components/LanguageSwitcher.vue';
+
+export default {
+  components: {
+    LanguageSwitcher
+  }
+}
+</script>
+
 
 <style lang="scss">
 @import '../css/colors';
 .c-navigation {
   display: flex;
+  flex: none;
   font: 1.3rem/1 'adelle-sans', sans-serif;
   margin-bottom: 5.6rem;
+  position: relative;
 }
 
 .c-navigation__item {
@@ -82,10 +76,6 @@
   margin-left: 3.2rem;
 }
 
-.c-navigation__item.c-navigation__item--language {
-  margin-left: auto;
-}
-
 .c-navigation__item--active {
   color: $gray-900;
   font-weight: 600;
@@ -93,7 +83,26 @@
 
 @media (max-width: 53em) {
   .c-navigation {
-    display: none;
+    background: #FFF;
+    box-shadow: 0 0.3rem 1rem 0.3rem rgba(0, 0, 0, 0.2);
+    bottom: 0;
+    justify-content: space-between;
+    left: 0;
+    margin: 0;
+    padding: 2.4rem;
+    position: fixed;
+    right: 0;
+    z-index: 10;
+  }
+
+  .c-navigation__item + .c-navigation__item {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 20em) {
+  .c-navigation {
+    font-size: 1.1rem;
   }
 }
 </style>

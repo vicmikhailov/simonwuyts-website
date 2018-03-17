@@ -1,9 +1,14 @@
 <template>
   <the-container>
-    <the-logo
-      class="c-logo"
-      :color="logoColor"
-    />
+    <nuxt-link
+      :to="$i18n.path('')"
+      class="c-logo-wrapper"
+      title="Simon Wuyts - Interaction Designer"
+      exact
+    >
+      <the-logo :color="logoColor"/>
+    </nuxt-link>
+    <language-switcher class="c-language-switcher--mobile"/>
     <the-preview/>
     <the-content>
       <nuxt/>
@@ -12,6 +17,7 @@
 </template>
 
 <script>
+import LanguageSwitcher from '~/components/LanguageSwitcher.vue';
 import TheContainer from '~/components/TheContainer.vue';
 import TheContent from '~/components/TheContent.vue';
 import TheLogo from '~/components/TheLogo.vue';
@@ -19,17 +25,18 @@ import ThePreview from '~/components/ThePreview.vue';
 
 export default {
   components: {
+    LanguageSwitcher,
     TheContainer,
     TheContent,
     TheLogo,
     ThePreview
   },
   computed: {
-    logoColor () {
+    logoColor() {
       return this.$store.state.logoColor;
     }
   }
-}
+};
 </script>
 
 <style lang="scss">
@@ -77,7 +84,7 @@ body {
   transition: all 0.15s ease-in-out;
 }
 
-.c-logo {
+.c-logo-wrapper {
   left: 2.4rem;
   position: absolute;
   top: 2.4rem;
@@ -85,7 +92,7 @@ body {
 }
 
 @media (min-width: 53em) {
-  .c-logo {
+  .c-logo-wrapper {
     left: 4rem;
     top: 4rem;
   }

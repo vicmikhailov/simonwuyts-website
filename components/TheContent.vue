@@ -8,10 +8,12 @@
 </template>
 
 <script>
+import SocialLinks from '~/components/SocialLinks.vue';
 import TheNavigation from '~/components/TheNavigation.vue';
 
 export default {
   components: {
+    SocialLinks,
     TheNavigation
   }
 }
@@ -20,13 +22,12 @@ export default {
 <style lang="scss">
 @import '../css/colors';
 .c-content {
-  padding: 3.2rem;
+  padding: 3.2rem 3.2rem 9.2rem;
 }
 
 .c-content__wrapper {
   h1 {
-    font: 4rem/5.6rem 'adelle-sans', sans-serif;
-    font-weight: 800;
+    font: 800 4rem/5.6rem 'adelle-sans', sans-serif;
     margin-bottom: 2.4rem;
   }
 
@@ -42,15 +43,25 @@ export default {
   }
 
   h2 {
-    font: 1.6rem/2.4rem 'adelle-sans', sans-serif;
-    font-weight: 700;
+    font: 600 1.6rem/2.4rem 'adelle-sans', sans-serif;
     margin: 4rem 0 1.6rem;
     text-transform: uppercase;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   p {
     color: $gray-500;
+    line-height: 2.8rem;
     margin-bottom: 1.6rem;
+  }
+
+  .note {
+    color: $gray-400;
+    font-size: 1.3rem;
+    font-style: italic;
   }
 
   a {
@@ -61,14 +72,22 @@ export default {
       border-bottom: 1px solid $blue-500;
     }
   }
+
+  img {
+    border: 1px solid rgba($gray-900, 0.05);
+    display: block;
+    margin: 2.4rem 0;
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 53em) {
   .c-content {
     display: flex;
     flex: none;
+    flex-grow: 1;
     flex-direction: column;
-    min-width: 56rem;
+    min-width: 64rem;
     overflow: auto;
     padding: 5.6rem 7.2rem;
     width: 50%;
@@ -79,6 +98,10 @@ export default {
     margin-top: auto;
     margin-bottom: auto;
     max-width: 56rem;
+
+    p {
+      line-height: 2.4rem;
+    }
   }
 }
 </style>

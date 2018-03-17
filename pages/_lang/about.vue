@@ -3,6 +3,7 @@
     <h1>{{ $t('about.title') }}</h1>
     <p class="lead">{{ $t('about.introduction') }}</p>
     <div v-html="$t('about.description')"/>
+    <social-links/>
     <portal to="preview">
       <preview-image
         src="/images/simon-about.jpg"
@@ -17,6 +18,7 @@
 
 <script>
 import PreviewImage from '~/components/PreviewImage.vue';
+import SocialLinks from '~/components/SocialLinks.vue';
 
 export default {
   fetch({ store }) {
@@ -28,7 +30,8 @@ export default {
     return { title: this.$t('about.title') }
   },
   components: {
-    PreviewImage
+    PreviewImage,
+    SocialLinks
   }
 }
 </script>

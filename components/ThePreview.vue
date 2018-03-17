@@ -26,7 +26,7 @@ export default {
 <style lang="scss">
 @import '../css/colors';
 .c-preview {
-  height: 40vh;
+  height: 45vh;
   overflow: hidden;
   position: relative;
   transition: background-color 0.15s linear;

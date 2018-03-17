@@ -92,6 +92,7 @@ export default {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: auto;
 }
 
 .c-preview-image--right {

@@ -7,31 +7,32 @@
     </p>
     <p>
       Simon Wuyts<br>
-      hi@simonwuyts.com<br>
-      0032 485 07 16 17
-    </p>
-
-    <p>
-      <a
-        href="https://www.twitter.com/simonwuyts"
-        target="_blank"
-      >
-        @simonwuyts
+      <a href="mailto:hi@simonwuyts.com">
+        hi@simonwuyts.com
       </a>
       <br>
-      <a
-        href="https://www.linkedin.com/in/simonwuyts/"
-        target="_blank"
-      >
-        LinkedIn
+      <a href="tel:0032485071617">
+        +32 (0)485 07 16 17
       </a>
     </p>
 
     <p>BE0557975573</p>
+    <portal to="preview">
+      <preview-image
+        src="/images/contact-map.png"
+        src-retina="/images/contact-map@2x.png"
+        :width="666"
+        :width-retina="1332"
+        alt="Map of Ghent"
+        align="full"
+      />
+    </portal>
   </div>
 </template>
 
 <script>
+import PreviewImage from '~/components/PreviewImage.vue';
+
 export default {
   fetch({ store }) {
     store.commit('SET_PAGE', 'contact');
@@ -40,6 +41,9 @@ export default {
   },
   head() {
     return { title: this.$t('contact.title') }
+  },
+  components: {
+    PreviewImage
   }
 }
 </script>

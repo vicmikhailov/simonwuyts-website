@@ -5,6 +5,7 @@
       class="lead"
       v-html="$t('home.introduction')"
     />
+    <social-links/>
     <portal to="preview">
       <preview-image
         src="/images/simon-home.jpg"
@@ -19,6 +20,7 @@
 
 <script>
 import PreviewImage from '~/components/PreviewImage.vue';
+import SocialLinks from '~/components/SocialLinks.vue';
 
 export default {
   fetch({ store }) {
@@ -30,7 +32,8 @@ export default {
     return { title: this.$t('home.title') }
   },
   components: {
-    PreviewImage
+    PreviewImage,
+    SocialLinks
   }
 }
 </script>
