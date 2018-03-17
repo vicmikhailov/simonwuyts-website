@@ -77,6 +77,16 @@
       </div>
     </div>
     <social-links/>
+    <portal to="preview">
+      <preview-image
+        src="/images/services.png"
+        src-retina="/images/services@2x.png"
+        :width="666"
+        :width-retina="1332"
+        alt="Services"
+        align="left"
+      />
+    </portal>
   </div>
 </template>
 
@@ -87,6 +97,7 @@
 // import IconMobile from '~/components/icons/IconMobile.vue';
 // import IconPrototype from '~/components/icons/IconPrototype.vue';
 // import IconWebapp from '~/components/icons/IconWebapp.vue';
+import PreviewImage from '~/components/PreviewImage.vue';
 import SocialLinks from '~/components/SocialLinks.vue';
 
 export default {
@@ -105,6 +116,7 @@ export default {
     // IconMobile,
     // IconPrototype,
     // IconWebapp
+    PreviewImage,
     SocialLinks
   }
 }
@@ -121,6 +133,11 @@ export default {
 
 .c-service__icon {
   margin-bottom: 2.4rem;
+
+  img {
+    border: 0;
+    margin: 0;
+  }
 }
 
 @media (min-width: 53em) {
@@ -131,11 +148,6 @@ export default {
   .c-service__icon {
     flex: none;
     margin: 4rem 3.2rem 0 0;
-
-    img {
-      border: 0;
-      margin: 0;
-    }
   }
 
   .c-service__description {

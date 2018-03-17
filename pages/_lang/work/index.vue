@@ -38,10 +38,21 @@
       </li>
     </ul>
     <social-links/>
+    <portal to="preview">
+      <preview-image
+        src="/images/work.png"
+        src-retina="/images/work@2x.png"
+        :width="666"
+        :width-retina="1332"
+        alt="Work"
+        align="left"
+      />
+    </portal>
   </div>
 </template>
 
 <script>
+import PreviewImage from '~/components/PreviewImage.vue';
 import SocialLinks from '~/components/SocialLinks.vue';
 
 export default {
@@ -54,6 +65,7 @@ export default {
     return { title: this.$t('work.title') }
   },
   components: {
+    PreviewImage,
     SocialLinks
   }
 }

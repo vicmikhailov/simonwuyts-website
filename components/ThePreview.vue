@@ -27,6 +27,7 @@ export default {
 @import '../css/colors';
 .c-preview {
   height: 45vh;
+  min-height: 40rem;
   overflow: hidden;
   position: relative;
   transition: background-color 0.15s linear;

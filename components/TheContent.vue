@@ -27,7 +27,7 @@ export default {
 
 .c-content__wrapper {
   h1 {
-    font: 800 4rem/5.6rem 'adelle-sans', sans-serif;
+    font: 800 3.2rem/4.8rem 'adelle-sans', sans-serif;
     margin-bottom: 2.4rem;
   }
 
@@ -98,6 +98,11 @@ export default {
     margin-top: auto;
     margin-bottom: auto;
     max-width: 56rem;
+
+    h1 {
+      font-size: 4rem;
+      line-height: 5.6rem;
+    }
 
     p {
       line-height: 2.4rem;

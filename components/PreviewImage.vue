@@ -54,7 +54,8 @@ export default {
       const alignClasses = {
         full: 'c-preview-image--full',
         center: 'c-preview-image--center',
-        right: 'c-preview-image--right',
+        left: 'c-preview-image--left',
+        right: 'c-preview-image--right'
       };
       return alignClasses[this.align];
     },
@@ -64,6 +65,10 @@ export default {
           transform: `translate(-50%, ${(50 - this.verticalOffset) * -1}%)`
         }
       } else if(this.verticalOffset > 0 && this.align === 'right') {
+        return {
+          transform: `translate(0, ${(50 - this.verticalOffset) * -1}%)`
+        }
+      } else if(this.verticalOffset > 0 && this.align === 'left') {
         return {
           transform: `translate(0, ${(50 - this.verticalOffset) * -1}%)`
         }
@@ -88,15 +93,24 @@ export default {
 
 .c-preview-image--center {
   left: 50%;
-  max-height: 90%;
+  min-width: 32rem;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
   width: auto;
 }
 
+.c-preview-image--left {
+  left: 0;
+  min-width: 32rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: auto;
+}
+
 .c-preview-image--right {
-  max-height: 90%;
+  min-width: 32rem;
   position: absolute;
   right: 0;
   top: 50%;
@@ -106,6 +120,7 @@ export default {
 
 @media (min-width: 53em) {
   .c-preview-image--center,
+  .c-preview-image--left,
   .c-preview-image--right {
     max-height: none;
     max-width: 100%;

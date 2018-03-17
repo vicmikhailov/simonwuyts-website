@@ -19,12 +19,12 @@
     <p>BE0557975573</p>
     <portal to="preview">
       <preview-image
-        src="/images/contact-map.png"
-        src-retina="/images/contact-map@2x.png"
+        src="/images/contact.png"
+        src-retina="/images/contact@2x.png"
         :width="666"
         :width-retina="1332"
-        alt="Map of Ghent"
-        align="full"
+        alt="Send me a letter"
+        align="right"
       />
     </portal>
   </div>
