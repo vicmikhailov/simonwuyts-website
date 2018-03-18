@@ -130,5 +130,18 @@ module.exports = {
         siteId: 1
       }
     ],
-  ]
+  ],
+  generate: {
+    routes: [
+      '/nl/',
+      '/nl/services',
+      '/nl/work',
+      '/nl/work/bedrock',
+      '/nl/work/gva-archief',
+      '/nl/work/kempenkuur',
+      '/nl/work/portfolio',
+      '/nl/about',
+      '/nl/contact'
+    ]
+  }
 }
