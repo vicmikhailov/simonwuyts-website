@@ -29,11 +29,11 @@ module.exports = {
       },
       {
         property: 'og:image',
-        content: 'http://www.simonwuyts.com/images/social.png'
+        content: 'https://www.simonwuyts.com/images/social.png'
       },
       {
         property: 'og:url',
-        content: 'http://www.simonwuyts.com/'
+        content: 'https://www.simonwuyts.com/'
       },
       {
         name: 'twitter:card',
