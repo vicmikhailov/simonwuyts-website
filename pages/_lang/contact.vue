@@ -40,7 +40,15 @@ export default {
     store.commit('SET_PREVIEW_COLOR', '#0076FF');
   },
   head() {
-    return { title: this.$t('contact.title') }
+    return {
+      title: this.$t('contact.title'),
+      meta: [
+        {
+          name: 'theme-color',
+          content: '#0076FF'
+        }
+      ]
+    }
   },
   components: {
     PreviewImage

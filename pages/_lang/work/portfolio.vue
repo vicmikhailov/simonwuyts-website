@@ -31,7 +31,15 @@ export default {
     store.commit('SET_PREVIEW_COLOR', '#0076FF');
   },
   head() {
-    return { title: 'Portfolio' }
+    return {
+      title: 'Portfolio',
+      meta: [
+        {
+          name: 'theme-color',
+          content: '#0076FF'
+        }
+      ]
+    }
   },
   components: {
     PreviewImage,

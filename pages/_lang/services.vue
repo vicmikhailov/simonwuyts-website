@@ -107,7 +107,15 @@ export default {
     store.commit('SET_PREVIEW_COLOR', '#0076FF');
   },
   head() {
-    return { title: this.$t('services.title') }
+    return {
+      title: this.$t('services.title'),
+      meta: [
+        {
+          name: 'theme-color',
+          content: '#0076FF'
+        }
+      ]
+    }
   },
   components: {
     // IconAnimation,

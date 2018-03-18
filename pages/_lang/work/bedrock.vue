@@ -60,7 +60,15 @@ export default {
     store.commit('SET_PREVIEW_COLOR', '#5833A6');
   },
   head() {
-    return { title: 'Bedrock Mobile Demo' }
+    return {
+      title: 'Bedrock Mobile Demo',
+      meta: [
+        {
+          name: 'theme-color',
+          content: '#5833A6'
+        }
+      ]
+    }
   },
   components: {
     ImageGrid,

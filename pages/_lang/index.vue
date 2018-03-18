@@ -29,7 +29,15 @@ export default {
     store.commit('SET_PREVIEW_COLOR', '#C9C8C1');
   },
   head() {
-    return { title: this.$t('home.title') }
+    return {
+      title: this.$t('home.title'),
+      meta: [
+        {
+          name: 'theme-color',
+          content: '#0076FF'
+        }
+      ]
+    }
   },
   components: {
     PreviewImage,

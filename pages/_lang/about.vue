@@ -27,7 +27,15 @@ export default {
     store.commit('SET_PREVIEW_COLOR', '#AFD1D8');
   },
   head() {
-    return { title: this.$t('about.title') }
+    return {
+      title: this.$t('about.title'),
+      meta: [
+        {
+          name: 'theme-color',
+          content: '#0076FF'
+        }
+      ]
+    }
   },
   components: {
     PreviewImage,

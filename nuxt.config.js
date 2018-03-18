@@ -4,10 +4,6 @@ module.exports = {
     titleTemplate: '%s - Simon Wuyts',
     meta: [
       {
-        name: 'theme-color',
-        content: '#0076FF'
-      },
-      {
         name: 'viewport',
         content: 'width=device-width, initial-scale=1.0'
       },

@@ -59,7 +59,15 @@ export default {
     store.commit('SET_PREVIEW_COLOR', '#DA291C');
   },
   head() {
-    return { title: 'GVA Archief' }
+    return {
+      title: 'GVA Archief',
+      meta: [
+        {
+          name: 'theme-color',
+          content: '#DA291C'
+        }
+      ]
+    }
   },
   components: {
     ImageGrid,

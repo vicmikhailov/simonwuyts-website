@@ -51,7 +51,15 @@ export default {
     store.commit('SET_PREVIEW_COLOR', '#78B533');
   },
   head() {
-    return { title: 'Kempenkuur' }
+    return {
+      title: 'Kempenkuur',
+      meta: [
+        {
+          name: 'theme-color',
+          content: '#78B533'
+        }
+      ]
+    }
   },
   components: {
     ImageGrid,
