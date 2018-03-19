@@ -68,7 +68,7 @@ module.exports = {
     },
     bedrock: {
       title: 'Bedrock Mobile Demo',
-      introduction: `Bij Mono ontwikkelden we onze eigen open-source prototyping tool <a href="https://bedrock.mono.company/" target="_blank">Bedrock</a>. Om de uitgebreide opties daarvan te tonen aan geïnteresseerde developers ontwikkelde ik een mobiele demo-webapp.`,
+      introduction: `Bij <a href="https://mono.company/" target="_blank">Mono</a> ontwikkelden we onze eigen open-source prototyping tool <a href="https://bedrock.mono.company/" target="_blank">Bedrock</a>. Om de uitgebreide opties daarvan te tonen aan geïnteresseerde developers ontwikkelde ik een mobiele demo-webapp.`,
       description: `<p>Deze fictieve kleurenpalet-applicatie is volledig gebouwd met webtechnologie (HTML, CSS en Javascript) n maakt gebruik van <a href="https://pugjs.org/" target="_blank">PugJS</a> om makkelijk verschillende componenten te herbruiken.</p>`
     },
     portfolio: {

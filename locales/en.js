@@ -68,7 +68,7 @@ module.exports = {
     },
     bedrock: {
       title: 'Bedrock Mobile Demo',
-      introduction: `At Mono, we developed our own open-source prototyping tool <a href="https://bedrock.mono.company/" target="_blank">Bedrock</a>. To show off it's capacities, I designed and developed a mobile demo app.`,
+      introduction: `At <a href="https://mono.company/" target="_blank">Mono</a>, we developed our own open-source prototyping tool <a href="https://bedrock.mono.company/" target="_blank">Bedrock</a>. To show off it's capacities, I designed and developed a mobile demo app.`,
       description: `<p>This fictional colour palette app is built entirely in HTML, CSS and Javascript. Under the hood it makes use of <a href="https://pugjs.org/" target="_blank">PugJS</a> to easily reuse different components.</p>`
     },
     portfolio: {
