@@ -32,10 +32,6 @@ module.exports = {
         content: 'https://www.simonwuyts.com/images/social.png'
       },
       {
-        property: 'og:url',
-        content: 'https://www.simonwuyts.com/'
-      },
-      {
         name: 'twitter:card',
         content: 'summary_large_image'
       },
