@@ -55,6 +55,7 @@ export default {
       title: 'Kempenkuur',
       meta: [
         {
+          hid: 'theme',
           name: 'theme-color',
           content: '#78B533'
         }

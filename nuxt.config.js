@@ -12,6 +12,11 @@ module.exports = {
         content: 'ie=edge'
       },
       {
+        hid: 'theme',
+        name: 'theme-color',
+        content: '#0076FF'
+      },
+      {
         name: 'description',
         content: 'Interaction designer and front-end developer. Dreams in HTML, CSS and Javascript, lives in Ghent, Belgium. Helps other people build digital products.'
       },

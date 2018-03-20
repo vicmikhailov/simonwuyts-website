@@ -28,13 +28,7 @@ export default {
   },
   head() {
     return {
-      title: this.$t('about.title'),
-      meta: [
-        {
-          name: 'theme-color',
-          content: '#0076FF'
-        }
-      ]
+      title: this.$t('about.title')
     }
   },
   components: {

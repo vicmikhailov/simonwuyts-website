@@ -64,6 +64,7 @@ export default {
       title: 'Bedrock Mobile Demo',
       meta: [
         {
+          hid: 'theme',
           name: 'theme-color',
           content: '#5833A6'
         },

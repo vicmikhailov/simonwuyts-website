@@ -41,13 +41,7 @@ export default {
   },
   head() {
     return {
-      title: this.$t('contact.title'),
-      meta: [
-        {
-          name: 'theme-color',
-          content: '#0076FF'
-        }
-      ]
+      title: this.$t('contact.title')
     }
   },
   components: {

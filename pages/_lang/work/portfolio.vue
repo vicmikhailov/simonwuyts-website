@@ -35,6 +35,7 @@ export default {
       title: 'Portfolio',
       meta: [
         {
+          hid: 'theme',
           name: 'theme-color',
           content: '#0076FF'
         }

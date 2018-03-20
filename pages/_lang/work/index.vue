@@ -63,13 +63,7 @@ export default {
   },
   head() {
     return {
-      title: this.$t('work.title'),
-      meta: [
-        {
-          name: 'theme-color',
-          content: '#0076FF'
-        }
-      ]
+      title: this.$t('work.title')
     }
   },
   components: {

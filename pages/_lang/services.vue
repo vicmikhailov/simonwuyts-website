@@ -108,13 +108,7 @@ export default {
   },
   head() {
     return {
-      title: this.$t('services.title'),
-      meta: [
-        {
-          name: 'theme-color',
-          content: '#0076FF'
-        }
-      ]
+      title: this.$t('services.title')
     }
   },
   components: {

@@ -63,6 +63,7 @@ export default {
       title: 'GVA Archief',
       meta: [
         {
+          hid: 'theme',
           name: 'theme-color',
           content: '#DA291C'
         }
