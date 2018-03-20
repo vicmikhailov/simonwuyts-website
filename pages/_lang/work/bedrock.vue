@@ -66,6 +66,10 @@ export default {
         {
           name: 'theme-color',
           content: '#5833A6'
+        },
+        {
+          property: 'og:image',
+          content: 'https://www.simonwuyts.com/images/work/bedrock-social.png'
         }
       ]
     }
