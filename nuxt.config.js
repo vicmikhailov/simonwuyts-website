@@ -28,8 +28,14 @@ module.exports = {
         content: 'Interaction designer and front-end developer. Dreams in HTML, CSS and Javascript, lives in Ghent, Belgium. Helps other people build digital products.'
       },
       {
+        hid: 'image',
         property: 'og:image',
         content: 'https://www.simonwuyts.com/images/social.png'
+      },
+      {
+        hid: 'url',
+        property: 'og:url',
+        content: 'https://www.simonwuyts.com/'
       },
       {
         name: 'twitter:card',

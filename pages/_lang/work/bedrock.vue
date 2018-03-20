@@ -68,11 +68,13 @@ export default {
           content: '#5833A6'
         },
         {
+          hid: 'image',
           property: 'og:image',
           content: 'https://www.simonwuyts.com/images/work/bedrock-social.png'
         },
         ,
         {
+          hid: 'url',
           property: 'og:url',
           content: 'https://www.simonwuyts.com' + this.$route.fullPath
         }
