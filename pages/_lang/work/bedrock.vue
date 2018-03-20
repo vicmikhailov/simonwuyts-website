@@ -70,6 +70,11 @@ export default {
         {
           property: 'og:image',
           content: 'https://www.simonwuyts.com/images/work/bedrock-social.png'
+        },
+        ,
+        {
+          property: 'og:url',
+          content: 'https://www.simonwuyts.com' + this.$route.fullPath
         }
       ]
     }
