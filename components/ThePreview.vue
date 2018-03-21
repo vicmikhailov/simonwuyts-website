@@ -4,19 +4,32 @@
     :style="{backgroundColor: previewColor}"
   >
     <transition name="fade">
-      <portal-target
-        name="preview"
-        slim
+      <preview-image
+        :src="previewImage.src"
+        :src-retina="previewImage.srcRetina"
+        :width="previewImage.width"
+        :width-retina="previewImage.widthRetina"
+        :alt="previewImage.alt"
+        :align="previewImage.align"
+        :vertical-offset="previewImage.verticalOffset"
       />
     </transition>
   </div>
 </template>
 
 <script>
+import PreviewImage from '~/components/PreviewImage.vue';
+
 export default {
+  components: {
+    PreviewImage
+  },
   computed: {
     previewColor() {
       return this.$store.state.previewColor;
+    },
+    previewImage() {
+      return this.$store.state.previewImage;
     }
   }
 }

@@ -7,16 +7,6 @@
     />
     <div v-html="$t('cases.portfolio.description')"/>
     <social-links/>
-    <portal to="preview">
-      <preview-image
-        src="/images/work/portfolio.png"
-        src-retina="/images/work/portfolio@2x.png"
-        :width="666"
-        :width-retina="1332"
-        alt="Portfolio Website"
-        align="right"
-      />
-    </portal>
   </div>
 </template>
 
@@ -29,6 +19,15 @@ export default {
     store.commit('SET_PAGE', 'portfolio');
     store.commit('SET_LOGO_COLOR', '#FFF');
     store.commit('SET_PREVIEW_COLOR', '#0076FF');
+    store.commit('SET_PREVIEW_IMAGE', {
+      src: '/images/work/portfolio.png',
+      srcRetina: '/images/work/portfolio@2x.png',
+      width: 666,
+      widthRetina: 1332,
+      alt: 'Portfolio Website',
+      align: 'right',
+      verticalOffset: 0
+    });
   },
   head() {
     return {

@@ -17,16 +17,6 @@
     </p>
 
     <p>BE0557975573</p>
-    <portal to="preview">
-      <preview-image
-        src="/images/contact.png"
-        src-retina="/images/contact@2x.png"
-        :width="666"
-        :width-retina="1332"
-        alt="Send me a letter"
-        align="right"
-      />
-    </portal>
   </div>
 </template>
 
@@ -38,6 +28,15 @@ export default {
     store.commit('SET_PAGE', 'contact');
     store.commit('SET_LOGO_COLOR', '#FFF');
     store.commit('SET_PREVIEW_COLOR', '#0076FF');
+    store.commit('SET_PREVIEW_IMAGE', {
+      src: '/images/contact.png',
+      srcRetina: '/images/contact@2x.png',
+      width: 666,
+      widthRetina: 1332,
+      alt: 'Send me a letter',
+      align: 'right',
+      verticalOffset: 0
+    });
   },
   head() {
     return {

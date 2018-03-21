@@ -77,16 +77,6 @@
       </div>
     </div>
     <social-links/>
-    <portal to="preview">
-      <preview-image
-        src="/images/services.png"
-        src-retina="/images/services@2x.png"
-        :width="666"
-        :width-retina="1332"
-        alt="Services"
-        align="left"
-      />
-    </portal>
   </div>
 </template>
 
@@ -105,6 +95,15 @@ export default {
     store.commit('SET_PAGE', 'services');
     store.commit('SET_LOGO_COLOR', '#FFF');
     store.commit('SET_PREVIEW_COLOR', '#0076FF');
+    store.commit('SET_PREVIEW_IMAGE', {
+      src: '/images/services.png',
+      srcRetina: '/images/services@2x.png',
+      width: 666,
+      widthRetina: 1332,
+      alt: 'Services',
+      align: 'left',
+      verticalOffset: 0
+    });
   },
   head() {
     return {
@@ -118,7 +117,6 @@ export default {
     // IconMobile,
     // IconPrototype,
     // IconWebapp
-    PreviewImage,
     SocialLinks
   }
 }

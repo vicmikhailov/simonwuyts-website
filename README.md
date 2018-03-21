@@ -9,6 +9,5 @@ Making this website would have been a lot harder without these wonderful open-so
 - [Vue.js](https://github.com/vuejs/vue)
 - [Nuxt.js](https://github.com/nuxt/nuxt.js/)
 - [Vue i18n](https://github.com/kazupon/vue-i18n)
-- [PortalVue](https://github.com/LinusBorg/portal-vue)
 
 If you have any questions about this website, feel free to [send me a message](mailto:hi@simonwuyts.com).

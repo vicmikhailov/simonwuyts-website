@@ -34,17 +34,6 @@
       >
     </image-grid>
     <social-links/>
-    <portal to="preview">
-      <preview-image
-        src="/images/work/bedrock-preview.png"
-        src-retina="/images/work/bedrock-preview@2x.png"
-        :width="666"
-        :width-retina="1332"
-        alt="Bedrock Mobile Demo"
-        align="center"
-        :vertical-offset="10"
-      />
-    </portal>
   </div>
 </template>
 
@@ -58,6 +47,15 @@ export default {
     store.commit('SET_PAGE', 'bedrock');
     store.commit('SET_LOGO_COLOR', '#FFF');
     store.commit('SET_PREVIEW_COLOR', '#5833A6');
+    store.commit('SET_PREVIEW_IMAGE', {
+      src: '/images/work/bedrock-preview.png',
+      srcRetina: '/images/work/bedrock-preview@2x.png',
+      width: 666,
+      widthRetina: 1332,
+      alt: 'Bedrock Mobile Demo',
+      align: 'center',
+      verticalOffset: 10
+    });
   },
   head() {
     return {

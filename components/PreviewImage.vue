@@ -7,6 +7,7 @@
     :alt="alt"
     :width="width"
     :style="offsetStyles"
+    :key="src"
   >
 </template>
 

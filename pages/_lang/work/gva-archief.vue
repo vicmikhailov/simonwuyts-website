@@ -34,16 +34,6 @@
     </image-grid>
     <p class="note">{{ $t('cases.archive.copyright') }}</p>
     <social-links/>
-    <portal to="preview">
-      <preview-image
-        src="/images/work/gva-archive-preview.png"
-        src-retina="/images/work/gva-archive-preview@2x.png"
-        :width="666"
-        :width-retina="1332"
-        alt="Mobile App for GVA"
-        align="right"
-      />
-    </portal>
   </div>
 </template>
 
@@ -57,6 +47,15 @@ export default {
     store.commit('SET_PAGE', 'gva-archive');
     store.commit('SET_LOGO_COLOR', '#FFF');
     store.commit('SET_PREVIEW_COLOR', '#DA291C');
+    store.commit('SET_PREVIEW_IMAGE', {
+      src: '/images/work/gva-archive-preview.png',
+      srcRetina: '/images/work/gva-archive-preview@2x.png',
+      width: 666,
+      widthRetina: 1332,
+      alt: 'GVA Archive Website',
+      align: 'right',
+      verticalOffset: 0
+    });
   },
   head() {
     return {

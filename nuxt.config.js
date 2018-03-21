@@ -114,8 +114,7 @@ module.exports = {
   ],
   build: {
     vendor: [
-      'vue-i18n',
-      'gsap'
+      'vue-i18n'
     ]
   },
   router: {
@@ -123,7 +122,6 @@ module.exports = {
   },
   plugins: [
     '~/plugins/i18n.js',
-    '~/plugins/vue-portal.js',
     {
       src: '~/plugins/typekit.js',
       ssr: false

@@ -38,16 +38,6 @@
       </li>
     </ul>
     <social-links/>
-    <portal to="preview">
-      <preview-image
-        src="/images/work.png"
-        src-retina="/images/work@2x.png"
-        :width="666"
-        :width-retina="1332"
-        alt="Work"
-        align="left"
-      />
-    </portal>
   </div>
 </template>
 
@@ -60,6 +50,15 @@ export default {
     store.commit('SET_PAGE', 'work');
     store.commit('SET_LOGO_COLOR', '#FFF');
     store.commit('SET_PREVIEW_COLOR', '#0076FF');
+    store.commit('SET_PREVIEW_IMAGE', {
+      src: '/images/work.png',
+      srcRetina: '/images/work@2x.png',
+      width: 666,
+      widthRetina: 1332,
+      alt: 'Work',
+      align: 'left',
+      verticalOffset: 0
+    });
   },
   head() {
     return {

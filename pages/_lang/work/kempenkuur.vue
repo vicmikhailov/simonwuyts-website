@@ -25,17 +25,6 @@
     </image-grid>
     <p class="note">{{ $t('cases.cycling.copyright') }}</p>
     <social-links/>
-    <portal to="preview">
-      <preview-image
-        src="/images/work/kempenkuur-preview.png"
-        src-retina="/images/work/kempenkuur-preview@2x.png"
-        :width="666"
-        :width-retina="1332"
-        alt="Mobile Web App for Kempen"
-        align="center"
-        :vertical-offset="10"
-      />
-    </portal>
   </div>
 </template>
 
@@ -49,6 +38,15 @@ export default {
     store.commit('SET_PAGE', 'kempenkuur');
     store.commit('SET_LOGO_COLOR', '#FFF');
     store.commit('SET_PREVIEW_COLOR', '#78B533');
+    store.commit('SET_PREVIEW_IMAGE', {
+      src: '/images/work/kempenkuur-preview.png',
+      srcRetina: '/images/work/kempenkuur-preview@2x.png',
+      width: 666,
+      widthRetina: 1332,
+      alt: 'Mobile Web App for Kempen',
+      align: 'center',
+      verticalOffset: 10
+    });
   },
   head() {
     return {

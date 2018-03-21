@@ -3,17 +3,7 @@ export const state = () => ({
   loading: false,
   locales: ['en', 'nl'],
   locale: 'en',
-  logoColor: '#0076FF',
-  previewColor: '#EFF2F3',
-  previewImage: {
-    src: '/images/simon-home.jpg',
-    srcRetina: '/images/simon-home@2x.jpg',
-    width: 666,
-    widthRetina: 1332,
-    alt: 'Simon Wuyts, Interaction Designer',
-    align: 'full',
-    verticalOffset: 0
-  }
+  logoColor: '#0076FF'
 });
 
 export const mutations = {
@@ -34,7 +24,7 @@ export const mutations = {
   SET_PAGE(state, currentPage) {
     state.currentPage = currentPage;
   },
-  SET_PREVIEW(state, previewImage) {
+  SET_PREVIEW_IMAGE(state, previewImage) {
     state.previewImage = previewImage;
   }
 };
