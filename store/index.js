@@ -4,8 +4,17 @@ export const state = () => ({
   locales: ['en', 'nl'],
   locale: 'en',
   logoColor: '#0076FF',
-  previewColor: '#EFF2F3'
-})
+  previewColor: '#EFF2F3',
+  previewImage: {
+    src: '/images/simon-home.jpg',
+    srcRetina: '/images/simon-home@2x.jpg',
+    width: 666,
+    widthRetina: 1332,
+    alt: 'Simon Wuyts, Interaction Designer',
+    align: 'full',
+    verticalOffset: 0
+  }
+});
 
 export const mutations = {
   SET_LANG(state, locale) {
@@ -24,5 +33,8 @@ export const mutations = {
   },
   SET_PAGE(state, currentPage) {
     state.currentPage = currentPage;
+  },
+  SET_PREVIEW(state, previewImage) {
+    state.previewImage = previewImage;
   }
-}
+};
