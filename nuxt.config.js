@@ -129,6 +129,7 @@ module.exports = {
   ],
   modules: [
     [
+      '@nuxtjs/sitemap',
       'nuxt-matomo',
       {
         matomoUrl: '//analytics.simonwuyts.com/',
@@ -137,6 +138,22 @@ module.exports = {
     ],
   ],
   generate: {
+    routes: [
+      '/nl/',
+      '/nl/services',
+      '/nl/work',
+      '/nl/work/bedrock',
+      '/nl/work/gva-archief',
+      '/nl/work/kempenkuur',
+      '/nl/work/portfolio',
+      '/nl/about',
+      '/nl/contact'
+    ]
+  },
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://www.simonwuyts.com',
+    generate: true,
     routes: [
       '/nl/',
       '/nl/services',
