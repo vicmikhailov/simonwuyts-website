@@ -130,11 +130,13 @@ module.exports = {
   modules: [
     [
       '@nuxtjs/sitemap',
-      'nuxt-matomo',
-      {
-        matomoUrl: '//analytics.simonwuyts.com/',
-        siteId: 1
-      }
+      [
+        'nuxt-matomo',
+        {
+          matomoUrl: '//analytics.simonwuyts.com/',
+          siteId: 1
+        }
+      ]
     ],
   ],
   generate: {
