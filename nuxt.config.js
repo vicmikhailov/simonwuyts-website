@@ -18,11 +18,13 @@ module.exports = {
       },
       {
         name: 'description',
-        content: 'Interaction designer and front-end developer. Dreams in HTML, CSS and Javascript, lives in Ghent, Belgium. Helps other people build digital products.'
+        content:
+          'Interaction designer and front-end developer. Dreams in HTML, CSS and Javascript, lives in Ghent, Belgium. Helps other people build digital products.'
       },
       {
         name: 'keywords',
-        content: 'interaction design, ux design, frontend, gent, belgium, simon, wuyts'
+        content:
+          'interaction design, ux design, frontend, gent, belgium, simon, wuyts'
       },
       {
         property: 'og:title',
@@ -30,7 +32,8 @@ module.exports = {
       },
       {
         property: 'og:description',
-        content: 'Interaction designer and front-end developer. Dreams in HTML, CSS and Javascript, lives in Ghent, Belgium. Helps other people build digital products.'
+        content:
+          'Interaction designer and front-end developer. Dreams in HTML, CSS and Javascript, lives in Ghent, Belgium. Helps other people build digital products.'
       },
       {
         hid: 'image',
@@ -49,7 +52,7 @@ module.exports = {
       {
         name: 'twitter:image:alt',
         content: 'Simon Wuyts - Interaction Designer'
-      },
+      }
     ],
     link: [
       {
@@ -103,7 +106,7 @@ module.exports = {
       {
         rel: 'apple-touch-icon',
         href: '/images/favicons/favicon-120.png'
-      },
+      }
     ]
   },
   css: [
@@ -112,11 +115,6 @@ module.exports = {
       lang: 'scss'
     }
   ],
-  build: {
-    vendor: [
-      'vue-i18n'
-    ]
-  },
   router: {
     middleware: 'i18n'
   },
@@ -128,14 +126,14 @@ module.exports = {
     }
   ],
   modules: [
-    '@nuxtjs/sitemap',
     [
       'nuxt-matomo',
       {
         matomoUrl: '//analytics.simonwuyts.com/',
         siteId: 1
       }
-    ]
+    ],
+    '@nuxtjs/sitemap'
   ],
   generate: {
     routes: [
@@ -153,7 +151,6 @@ module.exports = {
   sitemap: {
     path: '/sitemap.xml',
     hostname: 'https://www.simonwuyts.com',
-    generate: true,
     routes: [
       '/nl/',
       '/nl/services',
